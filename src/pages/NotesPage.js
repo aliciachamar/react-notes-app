@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Body = () => {
+const NotesPage = () => {
   return (
     <div>
-      <h3>Body</h3>
+      Notes
     </div>
   )
 }
 
-export default Body;
+export default NotesPage;
