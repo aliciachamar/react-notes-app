@@ -1,12 +1,15 @@
-import React from 'react'
-import notes from '../assets/data'
+import React from 'react';
+import { Link } from "react-router-dom";
+import notes from '../assets/data';
 
 const ListItem = ({note}) => {
   return (
-    <div className="notes-list-item">
-      <h3>{note.body}</h3>
-    </div>
+    <Link to={`/note/${note.id}`}>
+      <div className="notes-list-item">
+        <h3>{note.body}</h3>
+      </div>
+    </Link>
   )
 }
 
-export default ListItem
+export default ListItem;
